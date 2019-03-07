@@ -1,0 +1,131 @@
+/***General***/
+
+section {
+	margin: 40px auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;}
+
+.img img,
+section#ring div.card {width: 100%;}
+
+
+/***Fellows***/
+
+.card {
+	position: relative;}
+
+img.img-alive {opacity: 0.7;}
+
+img.img-alive:hover {opacity: 1;}
+
+.fellows-container:hover div.text {opacity: 0;}
+
+.fellows-container:hover .fellow {
+	opacity: 1;
+  color: red;
+  font-size: 18px;}
+
+.text-fellow {
+	box-sizing: border-box;
+	object-fit: contain;
+	width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  position: absolute;
+  top: 0;}
+
+img div.fellow-dead {
+  position: absolute;
+  top: 25%;}
+
+.img .text {
+	justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  opacity: 0.6;}
+
+.fellow {  
+	justify-content: center;
+  	align-items: center;
+  	background-color: transparent;
+  	opacity: 1;
+    font-size: 30px;
+    position: absolute;
+    top: auto;}
+
+.img .text p {
+ 	background: white;
+  	padding: 10px;
+  	width: 85%;
+  	opacity: 1;
+  	border-radius: 10px;
+  	margin: 15px 0 auto 22px;
+  	color: black;
+  	font-size: 20px;
+  	font-weight: 600;}
+
+.text-fellow p {
+	position: absolute;
+	box-sizing: border-box;
+  	text-align: center;
+  	z-index: 3;}
+
+.fellow p {
+	font-size: calc(var(--font) + 5px);
+  	background: transparent;
+  	padding: 10px 0;
+  	bottom: 0!important;
+  	color: white;
+  	margin: auto auto 20px auto;}
+
+
+/***Hunters***/
+
+.media img {width: 20%;}
+
+section h2 {
+	text-align: left!important;
+	width: 100%;
+	margin-bottom: 20px;}
+
+
+/***Ring****/
+
+.media-body h5 {margin-top: 15%;}
+
+.border {border: 1px solid #000;
+	margin: 40px auto;}
+
+table {overflow: auto; text-align: center;}
+
+thead {background-color: #b1b1b1!important; color: white;}
+
+div.card.card-quote {margin-top: 20px;}
+
+.blockquote-footer {margin-right: 15%;text-align: right;}
+
+
+/***Contact***/
+
+form, #email, #adress, form-group select, #message {
+	width: 90%; 
+  	padding: 5px 10px;
+  	margin: auto;}
+
+.form-control {width: 90%;}
+
+
+/***Footer***/
+
+.list-group-item {border: none;
+	background-color:transparent;}
+
+footer {margin-bottom: 0px; 
+	width: 100%;}
+
+
+/***Responsive***/
+
+@media(max-width: 350px) {section#army button {width: 100%; font-size: 9px;}}
