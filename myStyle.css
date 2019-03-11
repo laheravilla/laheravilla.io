@@ -1,7 +1,43 @@
+/***FONTS***/
+
+@font-face
+{font-family: "Aniron Regular"; 
+  src: url("fonts/aniron/aniron_regular.ttf");}
+
+@font-face
+{font-family: "Party Business"; src: url("fonts/partybusiness/partybusiness.ttf");}
+
+@font-face
+{font-family: "Tengwar"; src: url("fonts/tengwar_annatar/tngani.ttf");}
+
+
 /***General***/
 
+* {--font: 100%;
+  font-size: var(--font);}
+
+h5 {font-size: calc(var(--font) + 5%)!important;}
+
+h2, li, a, span, section#reward .btn.btn-light  {
+  font-family: "Aniron Regular"!important;}
+
+span.tengwar {font-family: "Tengwar"!important;
+  color:#ff9d01!important;
+  font-size: calc(var(--font) + 40%)!important;}
+
+h2 {margin: 3%;}
+
+section h2 {
+  text-align: left!important;
+  width: 100%;
+  margin-bottom: 2%;
+  font-size: calc(var(--font) + 55%)!important;}
+
+h5, p {font-family: "Party Business";}
+
+
 section {
-	margin: 40px auto;
+	margin: auto auto 1% auto!important;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -10,22 +46,60 @@ section {
 .img img,
 section#ring div.card {width: 100%;}
 
+body {background-image: url(img/bg_light.png);}
+
+img.round {border-radius: 50%;}
+
+
+/***Navbar***/
+
+nav.navbar.navbar-expand-lg {
+  background-color: #ff5f01!important;}
+
+nav .collapse.navbar-collapse {justify-content: flex-end!important;}
+
+a.nav-link {color: #ecdbc7!important;
+  font-size: 120%;
+  margin: 0.25rem 1.3rem!important;
+  padding: 0!important;
+  display: inline!important;}
+
+span.barre {color: #ecdbc7!important;}
+
+@media only screen and (max-width: 991px) {span.barre{display: none;}}
+
+ul li:last-child a.nav-link {border-right: none!important;}
+
+a.nav-link:hover {border-bottom: 3px solid;}
+
+
+/***Carousel***/
+
+.carousel-caption {bottom: 30%!important;
+  text-align: left;}
+
+.carousel-caption h5 {font-size: 450%!important; 
+  margin-bottom: 28px;}
+
+.carousel-caption p {font-size: 250%!important;}
+
+img.prev-icon {margin-top: -17px;
+    margin-left: -5px;}
+
+img.next-icon {margin-top: -17px;
+    margin-right: -5px;}
 
 /***Fellows***/
 
+section#fellows {margin-bottom: 5%!important;}
+
 .card {
-	position: relative;}
+	position: relative;
+  background-color: #111111;}
 
 img.img-alive {opacity: 0.7;}
 
 img.img-alive:hover {opacity: 1;}
-
-.fellows-container:hover div.text {opacity: 0;}
-
-.fellows-container:hover .fellow {
-	opacity: 1;
-  color: red;
-  font-size: 18px;}
 
 .text-fellow {
 	box-sizing: border-box;
@@ -34,61 +108,108 @@ img.img-alive:hover {opacity: 1;}
   display: flex;
   flex-flow: column wrap;
   position: absolute;
-  top: 0;}
+  top: 0;
+  transition: all .3s ease-in;
+  opacity: 0.6;}
 
 img div.fellow-dead {
   position: absolute;
   top: 25%;}
 
-.img .text {
+div .text {
 	justify-content: flex-start;
-  align-items: flex-start;
-  background-color: white;
-  opacity: 0.6;}
+  align-items: flex-start;}
 
 .fellow {  
-	justify-content: center;
+	 justify-content: center;
   	align-items: center;
   	background-color: transparent;
   	opacity: 1;
-    font-size: 30px;
+    font-family: "Party Business"!important;
+    font-size: calc(var(--font) + 40px)!important;
     position: absolute;
-    top: auto;}
+    top: 45%;
+    color: white;
+    transition: all .3s ease-in;}
 
-.img .text p {
- 	background: white;
-  	padding: 10px;
+.fellows-container:hover div.text {opacity: 0;}
+
+.fellows-container:hover .fellow {
+  opacity: 1;
+  font-size: 35px!important;
+  top: 65%;}
+
+div .text p {
   	width: 85%;
-  	opacity: 1;
   	border-radius: 10px;
-  	margin: 15px 0 auto 22px;
+  	margin: 5% 0 auto 6.5%;
   	color: black;
-  	font-size: 20px;
-  	font-weight: 600;}
+  	font-size: 150%;
+  	font-weight: 400;}
+
+div .text.fellow-dead p {margin: 11% 0 auto 22px!important;
+  background: transparent!important;
+  box-shadow: none;}
+
 
 .text-fellow p {
-	position: absolute;
-	box-sizing: border-box;
-  	text-align: center;
-  	z-index: 3;}
+  background: white;
+	 position: absolute;
+	 box-sizing: border-box;
+    text-align: center;
+    z-index: 3;
+    font-size: calc(var(--font) + 120%)!important;
+    font-family: "Party Business"!important;
+    box-shadow: 2px 2px 2px 4px white;}
 
-.fellow p {
-	font-size: calc(var(--font) + 5px);
-  	background: transparent;
-  	padding: 10px 0;
-  	bottom: 0!important;
-  	color: white;
-  	margin: auto auto 20px auto;}
+.text.text-fellow.fellow-dead p span {font-size: calc(var(--font) + 20px)!important;}
 
+.text-fellow p span {font-size: var(--font)!important;
+    font-family: "Party Business"!important;}
+
+h2 span {color: black;
+  font-size: calc(var(--font) - 20%);}
+
+a.badge.badge-pill {font-size: 120%!important;
+  margin: 0 auto 3% auto!important;
+  color: #777777;
+  font-weight: 400;}
+
+a.badge.badge-pill:hover {color: #ff5f01;
+  text-decoration-style: solid;}
+
+.text-fellow span.tengwar-dead {position: absolute; 
+  top: 80%!important; 
+  left: 54%!important;
+  color: #ff5f01!important;}
+
+
+/***Reward***/
+
+section#reward, #ring {background-color: #111111; margin-bottom: 1%;}
+
+section#reward h2, #ring h2 {color: white;}
+
+section#reward .text p {background-color: transparent;
+  color: white;}
+
+section#reward .btn.btn-light {color: #ff5f01;
+  font-size: calc(var(--font) + 55%)!important;
+  margin: 1% auto 5% auto;}
+
+section#reward div .text p {margin: 0 5%!important;}
+
+section#reward div.img {padding: 0 5%;}
 
 /***Hunters***/
 
-.media img {width: 20%;}
+.media img {width: 25%;
+  border-radius: 10px;}
 
-section h2 {
-	text-align: left!important;
-	width: 100%;
-	margin-bottom: 20px;}
+.card-body .card-text {color: #999999;
+  font-size: calc(var(--font) + 15px)!important;}
+
+div.hunters {width: 100%;}
 
 
 /***Ring****/
@@ -98,13 +219,21 @@ section h2 {
 .border {border: 1px solid #000;
 	margin: 40px auto;}
 
-table {overflow: auto; text-align: center;}
+table {overflow: auto; 
+  text-align: center;}
 
-thead {background-color: #b1b1b1!important; color: white;}
+section#ring div .card-header {background: #ff5f01;}
+
+section#ring div.card-body {background: #e3dedb}
 
 div.card.card-quote {margin-top: 20px;}
 
 .blockquote-footer {margin-right: 15%;text-align: right;}
+
+
+/***Army***/
+
+img.army {width: 40%;}
 
 
 /***Contact***/
@@ -116,6 +245,8 @@ form, #email, #adress, form-group select, #message {
 
 .form-control {width: 90%;}
 
+section#contact div div img {width: 85%;}
+
 
 /***Footer***/
 
@@ -123,9 +254,40 @@ form, #email, #adress, form-group select, #message {
 	background-color:transparent;}
 
 footer {margin-bottom: 0px; 
-	width: 100%;}
+	width: 100%;
+  background-color: #ff5f01;}
+
+.list-group > li a {color: #ecdbc7!important;}
 
 
 /***Responsive***/
 
-@media(max-width: 350px) {section#army button {width: 100%; font-size: 9px;}}
+
+@media (max-width: 1245px) {
+  a.nav-link {font-size: 80%!important;
+    padding: 0!important;
+    margin: 0.25rem 1.0rem!important;}
+  .carousel-caption h5 {font-size: 350%!important;}
+  .carousel-caption p {font-size: 150%!important;}}
+
+@media (max-width: 950px) {
+  .carousel-caption h5 {font-size: 230%!important;}
+  .carousel-caption p {font-size: 150%!important;}}
+
+@media only screen and (min-width: 950px) and (max-width: 1245px) {
+  .text-fellow p {font-size: calc(var(--font) + 50%)!important;}
+  .fellow {font-size: calc(var(--font) + 100%)!important; top: 40%;}
+  .fellows-container:hover .fellow {font-size: 20px!important; top: 55%;}}
+
+@media only screen and (min-width: 710px) and (max-width: 950px) {
+  .text-fellow p {font-size: calc(var(--font) + 30%)!important;}
+  .fellow {font-size: calc(var(--font) + 60%)!important; top: 20%;}
+  .fellows-container:hover .fellow {font-size: 20px!important; top: 35%;}}
+
+@media only screen and (min-width: 576px) and (max-width: 710px) {
+  .text-fellow p {font-size: calc(var(--font) + 5%)!important;}
+  .fellow {font-size: calc(var(--font) + 35%)!important; top: 15%;}
+  .fellows-container:hover .fellow {font-size: 15px!important; top: 25%;}}
+
+@media(max-width: 350px) {
+  section#army button {width: 100%; font-size: 9px;}}
