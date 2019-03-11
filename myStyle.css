@@ -2,13 +2,13 @@
 
 @font-face
 {font-family: "Aniron Regular"; 
-  src: url("fonts/aniron/aniron_regular.ttf");}
+  src: url("aniron_regular.ttf");}
 
 @font-face
-{font-family: "Party Business"; src: url("fonts/partybusiness/partybusiness.ttf");}
+{font-family: "Party Business"; src: url("partybusiness.ttf");}
 
 @font-face
-{font-family: "Tengwar"; src: url("fonts/tengwar_annatar/tngani.ttf");}
+{font-family: "Tengwar"; src: url("tngani.ttf");}
 
 
 /***General***/
@@ -46,7 +46,7 @@ section {
 .img img,
 section#ring div.card {width: 100%;}
 
-body {background-image: url(img/bg_light.png);}
+body {background-image: url(bg_light.png);}
 
 img.round {border-radius: 50%;}
 
@@ -290,4 +290,8 @@ footer {margin-bottom: 0px;
   .fellows-container:hover .fellow {font-size: 15px!important; top: 25%;}}
 
 @media(max-width: 350px) {
+<<<<<<< HEAD
   section#army button {width: 100%; font-size: 9px;}}
+=======
+  section#army button {width: 100%; font-size: 9px;}}
+>>>>>>> f0526f869e7e7648fe4b304dd9e3206a624af4b9
