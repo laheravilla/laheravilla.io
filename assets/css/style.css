@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Aniron Regular";
+  src: url("../fonts/aniron/aniron_regular.ttf");
+}
+.ringDeco {
+  display: flex;
+  flex-direction: column;
+}
+.ringDeco .smallRings, .ringDeco .chainRings, .ringDeco .bigRingCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.ringDeco .smallRings .smallRing, .ringDeco .chainRings .smallRing, .ringDeco .bigRingCont .smallRing {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-bbox-shadow: 1px 1px 3px #ec3c0e;
+  -moz-bbox-shadow: 1px 1px 3px #ec3c0e;
+  -ms-bbox-shadow: 1px 1px 3px #ec3c0e;
+  -o-bbox-shadow: 1px 1px 3px #ec3c0e;
+  box-shadow: 1px 1px 3px #ec3c0e;
+  padding: 5px;
+  border: 3px solid #F3603A;
+}
+.ringDeco .smallRings .text-smallRing, .chainRings .ringDeco .smallRings .text-chainRing, .ringDeco .chainRings .text-smallRing, .ringDeco .chainRings .text-chainRing, .bigRingCont .ringDeco .smallRings .text-bigRing, .bigRingCont .ringDeco .chainRings .text-bigRing, .ringDeco .bigRingCont .text-smallRing, .chainRings .ringDeco .bigRingCont .text-chainRing, .ringDeco .bigRingCont .text-bigRing {
+  color: black;
+  font-size: 1.5625rem;
+  font-family: "Aniron Regular";
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.bigRingCont .bigRing {
+  width: 130px;
+  height: 130px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-bbox-shadow: 4px 1px 3px #f0b204;
+  -moz-bbox-shadow: 4px 1px 3px #f0b204;
+  -ms-bbox-shadow: 4px 1px 3px #f0b204;
+  -o-bbox-shadow: 4px 1px 3px #f0b204;
+  box-shadow: 4px 1px 3px #f0b204;
+  padding: 5px;
+  border: 10px solid #fccc44;
+}
+.chainRings {
+  flex-wrap: wrap;
+}
+.chainRings .chainRing-1 {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-bbox-shadow: 4px 1px 3px black;
+  -moz-bbox-shadow: 4px 1px 3px black;
+  -ms-bbox-shadow: 4px 1px 3px black;
+  -o-bbox-shadow: 4px 1px 3px black;
+  box-shadow: 4px 1px 3px black;
+  border: 3px solid black;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: -12px;
+}
+.chainRings .chainRing-2 {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-bbox-shadow: 4px 1px 3px black;
+  -moz-bbox-shadow: 4px 1px 3px black;
+  -ms-bbox-shadow: 4px 1px 3px black;
+  -o-bbox-shadow: 4px 1px 3px black;
+  box-shadow: 4px 1px 3px black;
+  border: 3px solid black;
+  width: 2.3rem;
+  height: 2.3rem;
+  margin-right: -13px;
+}
+.chainRings .chainRing-3 {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-bbox-shadow: 4px 1px 3px black;
+  -moz-bbox-shadow: 4px 1px 3px black;
+  -ms-bbox-shadow: 4px 1px 3px black;
+  -o-bbox-shadow: 4px 1px 3px black;
+  box-shadow: 4px 1px 3px black;
+  border: 3px solid black;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: -14px;
+}
+.chainRings .chainRing-4 {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-bbox-shadow: 4px 1px 3px black;
+  -moz-bbox-shadow: 4px 1px 3px black;
+  -ms-bbox-shadow: 4px 1px 3px black;
+  -o-bbox-shadow: 4px 1px 3px black;
+  box-shadow: 4px 1px 3px black;
+  border: 3px solid black;
+  width: 3.3rem;
+  height: 3.3rem;
+  margin-right: -15px;
+}
+.chainRings .chainRing-5 {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-bbox-shadow: 4px 1px 3px black;
+  -moz-bbox-shadow: 4px 1px 3px black;
+  -ms-bbox-shadow: 4px 1px 3px black;
+  -o-bbox-shadow: 4px 1px 3px black;
+  box-shadow: 4px 1px 3px black;
+  border: 3px solid black;
+  width: 3.8rem;
+  height: 3.8rem;
+  margin-right: -16px;
+}
+.chainRings .chainRing-6 {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-bbox-shadow: 4px 1px 3px black;
+  -moz-bbox-shadow: 4px 1px 3px black;
+  -ms-bbox-shadow: 4px 1px 3px black;
+  -o-bbox-shadow: 4px 1px 3px black;
+  box-shadow: 4px 1px 3px black;
+  border: 3px solid black;
+  width: 4.3rem;
+  height: 4.3rem;
+  margin-right: -17px;
+}
+.chainRings .text-chainRing {
+  width: 100%;
+  text-align: center;
+  margin-top: 3%;
+}
+
+/*# sourceMappingURL=style.css.map */

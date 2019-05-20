@@ -1,0 +1,69 @@
+@import "mixins";
+@import "variables";
+@import "functions";
+
+
+.ringDeco {
+  display: flex;
+  flex-direction: column;
+  .smallRings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    .smallRing {
+      width: $ringWidth;
+      height: $ringWidth;
+      @include border-radius();
+      @include box-shadow(1px 1px 3px darken($primary, 10));
+      padding: 5px;
+      border: 3px solid $primary;
+    }
+    .text-smallRing {
+      color: $textColor;
+      font-size: rem(25px);
+      font-family: $primaryFont;
+      padding-right: $ringWidth - 30;
+      padding-left: $ringWidth - 30;
+    }
+  }
+}
+
+.bigRingCont {
+  @extend .smallRings;
+  .bigRing {
+    width: $ringWidth + 80;
+    height: $ringWidth + 80;
+    @include border-radius();
+    @include box-shadow(4px 1px 3px darken($secondary, 15));
+    padding: 5px;
+    border: 10px solid $secondary;
+  }
+  .text-bigRing {
+    @extend .text-smallRing;
+  }
+}
+
+.chainRings {
+  @extend .smallRings;
+  flex-wrap: wrap;
+  @for $i from 1 through 6 {
+    .chainRing-#{$i} {
+      @include border-radius();
+      @include box-shadow(4px 1px 3px darken($textColor, 15));
+      border: 3px solid $textColor;
+      width: #{$i/2 + 1.3}rem;
+      height: #{$i/2 + 1.3}rem;
+      margin-right: -#{$i + 11}px;
+
+    }
+  }
+  .text-chainRing {
+    width: 100%;
+    text-align: center;
+    margin-top: 3%;
+    @extend .text-smallRing;
+  }
+}
+
