@@ -1,6 +1,7 @@
 /***FONTS***/
 
 @font-face
+
 {font-family: "Aniron Regular"; src: url("../fonts/aniron/aniron_regular.ttf");}
 
 @font-face
@@ -46,6 +47,7 @@ section {
 section#ring div.card {width: 100%;}
 
 body {background-image: url("../img/bg_light.png");}
+
 
 img.round {border-radius: 50%;}
 
@@ -289,4 +291,6 @@ footer {margin-bottom: 0px;
   .fellows-container:hover .fellow {font-size: 15px!important; top: 25%;}}
 
 @media(max-width: 350px) {
+
   section#army button {width: 100%; font-size: 9px;}}
+
